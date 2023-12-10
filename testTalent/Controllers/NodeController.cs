@@ -71,5 +71,17 @@ namespace testTalent.Controllers
 
             return childNodes;
         }
+
+
+
+
+        [HttpPut]
+        [CheckIdMiddleware] // اضافه کردن ویژگی بررسی id
+        public IActionResult UpdateItem(int id)
+        {
+            // اجرای اعمال مورد نیاز برای بروزرسانی آیتم
+
+            return Ok("آیتم با موفقیت بروزرسانی شد.");
+        }
     }
 }
